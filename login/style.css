@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+}
+
+.login-container {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.403);
+    text-align: center;
+    color: white;
+    display: flex;
+    border-radius: 20px 0 0 20px;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.login {
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+}
+
+.loginbutton {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 1%;
+    margin-top: 1%;
+    width: 200px;
+    transition: all 0.2s;
+    border: 1.5px solid rgba(255, 255, 255, 0.9);
+}
+
+.loginbutton:hover {
+    background-color: white;
+}
+
+.loginbutton:hover a {
+    color: gray;
+}
+
+.loginbutton a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+}
+
+
+.register {
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+
+.registertext {
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.registerform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.registertext h1 {
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 300px;
+    padding: 0.8rem;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label {
+    top: -10px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+button {
+    width: 230px;
+    padding: 0.8rem;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+.register-link a {
+    color: rgb(90, 90, 90);
+}
+
+@media screen and (max-width: 1400px) {
+    .register {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .register {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        display: block;
+    }
+
+    .register {
+        width: 350px;
+        height: 400px;
+    }
+
+    .login {
+        width: 350px;
+        height: 300px;
+    }
+
+    .logintext, .registertext {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        width: 250px;
+    }
+}
